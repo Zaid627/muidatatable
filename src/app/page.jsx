@@ -8,7 +8,7 @@ import { Tooltip } from "@mui/material";
 export default function Home() {
   return (
     
-      <Tooltip enterTouchDelay={5000}>
+      <Tooltip enterTouchDelay={5000} onDoubleClickCapture={Tooltip}>
      <Posts/>
 
     </Tooltip>
