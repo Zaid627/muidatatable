@@ -261,10 +261,10 @@ const Posts = () => {
       
     },
    
-      { field: 'title', headerName: 'Title',  width: 120 },
-    { field: 'price', headerName: 'Price',width: 120 },
-    { field: 'category', headerName: 'Category',  width: 120 },
-    { field: 'description', headerName: 'Description',width: 500},
+      { field: 'title', headerName: 'Title', flex:1, width: 120 },
+    { field: 'price', headerName: 'Price',flex:1, width: 120 },
+    { field: 'category', headerName: 'Category', flex:1, width: 120 },
+    { field: 'description', headerName: 'Description',flex:2, width: '500'},
     {
       field: 'rating',
       headerName: 'Rating',
@@ -272,6 +272,7 @@ const Posts = () => {
         <Rating value={params.value.rate} readOnly />
       ),
       width: 140,
+      
       
     },
     
