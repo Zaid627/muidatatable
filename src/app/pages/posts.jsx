@@ -271,7 +271,8 @@ const Posts = () => {
       renderCell: (params) => (
         <Rating value={params.value.rate} readOnly />
       ),
-      width: 140,
+      width: '140',
+     
       
       
     },
@@ -296,7 +297,7 @@ const Posts = () => {
         Product List
       </Typography>
       <Box sx={{   width: '100%',  }}>
-        <DataGrid size={{xs:12, sm:6, md:4}} sx={{padding:'20', ".MuiDataGrid-row":{ height: "35px"}}}
+        <DataGrid size={{xs:12, sm:6, md:4}} sx={{padding:'20', ".MuiDataGrid-row":{ height: "35px", }}}
           rows={rows}
           columns={columns}
           pageSize={5}
