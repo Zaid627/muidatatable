@@ -7,7 +7,7 @@ import { Tooltip } from "@mui/material";
 
 export default function Home() {
   return (
-    <Tooltip sx={{visibility:"focus-visible"}}>
+    <Tooltip enterTouchDelay={0}>
      <Posts/>
 
     </Tooltip>
