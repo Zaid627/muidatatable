@@ -7,7 +7,7 @@ import { Tooltip } from "@mui/material";
 
 export default function Home() {
   return (
-    <Tooltip sx={{position: "absolute", visibility:"visible",}}>
+    <Tooltip >
      <Posts/>
 
     </Tooltip>

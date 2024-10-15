@@ -262,9 +262,9 @@ const Posts = () => {
     },
    
       { field: 'title', headerName: 'Title',  width: 120 },
-    { field: 'price', headerName: 'Price', width: 120 },
+    { field: 'price', headerName: 'Price',width: 120 },
     { field: 'category', headerName: 'Category',  width: 120 },
-    { field: 'description', headerName: 'Description', width: 120 },
+    { field: 'description', headerName: 'Description',flex:2,  width: 120 },
     {
       field: 'rating',
       headerName: 'Rating',
