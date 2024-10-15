@@ -107,7 +107,7 @@
 
 
 //main code
-"use client";
+// "use client";
 // import React, { useEffect, useState } from "react";
 // import {
 //   Container,
@@ -247,7 +247,7 @@ const Posts = () => {
       
       field: 'image',
       headerName: 'Image',
-      width: 100,
+      width: 120,
       renderCell: (params) => (
         <Link href={params.value} target="_blank" sx={{width: 80, height: 80}}>
         <img 
@@ -260,10 +260,11 @@ const Posts = () => {
       ),
       
     },
-    { field: 'title', headerName: 'Title', flex: 1 },
+   
+      { field: 'title', headerName: 'Title',  width: 120 },
     { field: 'price', headerName: 'Price', width: 120 },
-    { field: 'category', headerName: 'Category', flex: 1 },
-    { field: 'description', headerName: 'Description', flex: 2 },
+    { field: 'category', headerName: 'Category',  width: 120 },
+    { field: 'description', headerName: 'Description', width: 120 },
     {
       field: 'rating',
       headerName: 'Rating',
@@ -272,6 +273,9 @@ const Posts = () => {
       ),
       width: 140,
     },
+    
+    
+    
   ];
 
   const rows = products.map((product) => ({
@@ -290,7 +294,7 @@ const Posts = () => {
         Product List
       </Typography>
       <Box sx={{   width: '100%',  }}>
-        <DataGrid sx={{padding:'20', ".MuiDataGrid-row":{ height: "35px"}}}
+        <DataGrid size={{xs:12, sm:6, md:4}} sx={{padding:'20', ".MuiDataGrid-row":{ height: "35px"}}}
           rows={rows}
           columns={columns}
           pageSize={5}
