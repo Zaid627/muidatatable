@@ -7,10 +7,13 @@ import { Tooltip } from "@mui/material";
 
 export default function Home() {
   return (
-    <Tooltip enterTouchDelay={0}>
+    
+      <Tooltip enterTouchDelay={5000}>
      <Posts/>
 
     </Tooltip>
+   
+    
     
   );
 }
